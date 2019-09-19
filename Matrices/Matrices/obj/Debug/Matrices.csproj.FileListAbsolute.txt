@@ -1,0 +1,12 @@
+C:\Users\lamos\source\repos\Programacion.NET\Matrices\Matrices\bin\Debug\Matrices.exe.config
+C:\Users\lamos\source\repos\Programacion.NET\Matrices\Matrices\bin\Debug\Matrices.exe
+C:\Users\lamos\source\repos\Programacion.NET\Matrices\Matrices\bin\Debug\Matrices.pdb
+C:\Users\lamos\source\repos\Programacion.NET\Matrices\Matrices\obj\Debug\Matrices.csprojAssemblyReference.cache
+C:\Users\lamos\source\repos\Programacion.NET\Matrices\Matrices\obj\Debug\Matrices.Form1.resources
+C:\Users\lamos\source\repos\Programacion.NET\Matrices\Matrices\obj\Debug\Matrices.Form2.resources
+C:\Users\lamos\source\repos\Programacion.NET\Matrices\Matrices\obj\Debug\Matrices.Form3.resources
+C:\Users\lamos\source\repos\Programacion.NET\Matrices\Matrices\obj\Debug\Matrices.Properties.Resources.resources
+C:\Users\lamos\source\repos\Programacion.NET\Matrices\Matrices\obj\Debug\Matrices.csproj.GenerateResource.cache
+C:\Users\lamos\source\repos\Programacion.NET\Matrices\Matrices\obj\Debug\Matrices.csproj.CoreCompileInputs.cache
+C:\Users\lamos\source\repos\Programacion.NET\Matrices\Matrices\obj\Debug\Matrices.exe
+C:\Users\lamos\source\repos\Programacion.NET\Matrices\Matrices\obj\Debug\Matrices.pdb
