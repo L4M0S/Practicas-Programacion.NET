@@ -29,7 +29,8 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.rtbResultado = new System.Windows.Forms.RichTextBox();
+            this.dgvResultado = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvResultado)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -41,23 +42,24 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Resultado";
             // 
-            // rtbResultado
+            // dgvResultado
             // 
-            this.rtbResultado.Location = new System.Drawing.Point(76, 74);
-            this.rtbResultado.Name = "rtbResultado";
-            this.rtbResultado.Size = new System.Drawing.Size(250, 250);
-            this.rtbResultado.TabIndex = 1;
-            this.rtbResultado.Text = "";
+            this.dgvResultado.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvResultado.Location = new System.Drawing.Point(76, 60);
+            this.dgvResultado.Name = "dgvResultado";
+            this.dgvResultado.Size = new System.Drawing.Size(350, 350);
+            this.dgvResultado.TabIndex = 2;
             // 
             // Form3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.rtbResultado);
+            this.Controls.Add(this.dgvResultado);
             this.Controls.Add(this.label1);
             this.Name = "Form3";
             this.Text = "Form3";
+            ((System.ComponentModel.ISupportInitialize)(this.dgvResultado)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -66,6 +68,6 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.RichTextBox rtbResultado;
+        private System.Windows.Forms.DataGridView dgvResultado;
     }
 }

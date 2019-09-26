@@ -48,16 +48,26 @@ namespace Matrices
                 }
             }
 
-            int rowLength1 = matriz3.GetLength(0);
-            int colLength1 = matriz3.GetLength(1);
+            int rowLength1 = matriz1.GetLength(1);
 
-            for (int i = 0; i < rowLength1; i++)
+            for (int i = 1; i <= rowLength1; i++)
             {
-                for (int j = 0; j < colLength1; j++)
+                dgvResultado.Columns.Add(Convert.ToString(i), Convert.ToString(i));
+            }
+
+            int rowLength3 = matriz3.GetLength(0);
+            int colLength3 = matriz3.GetLength(1);
+
+            for (int i = 0; i < rowLength3; i++)
+            {
+                dgvResultado.Rows.Insert(i);
+                for (int j = 0; j < colLength3; j++)
                 {
-                    rtbResultado.AppendText(matriz3[i, j] + " , ");
+                    //dgvM1.Rows.Insert(i, 1);
+                    //dgvM1.Rows.Add("h "," "," "," "," "," ");
+                    dgvResultado[j, i].Value = matriz3[i, j];
                 }
-                rtbResultado.AppendText("\n");
+                //rtbM1.AppendText("\n");
             }
         }
 
@@ -73,16 +83,26 @@ namespace Matrices
                 }
             }
 
-            int rowLength1 = matriz3.GetLength(0);
-            int colLength1 = matriz3.GetLength(1);
+            int rowLength1 = matriz1.GetLength(1);
 
-            for (int i = 0; i < rowLength1; i++)
+            for (int i = 1; i <= rowLength1; i++)
             {
-                for (int j = 0; j < colLength1; j++)
+                dgvResultado.Columns.Add(Convert.ToString(i), Convert.ToString(i));
+            }
+
+            int rowLength3 = matriz3.GetLength(0);
+            int colLength3 = matriz3.GetLength(1);
+
+            for (int i = 0; i < rowLength3; i++)
+            {
+                dgvResultado.Rows.Insert(i);
+                for (int j = 0; j < colLength3; j++)
                 {
-                    rtbResultado.AppendText(matriz3[i, j] + " , ");
+                    //dgvM1.Rows.Insert(i, 1);
+                    //dgvM1.Rows.Add("h "," "," "," "," "," ");
+                    dgvResultado[j, i].Value = matriz3[i, j];
                 }
-                rtbResultado.AppendText("\n");
+                //rtbM1.AppendText("\n");
             }
         }
 
@@ -107,17 +127,26 @@ namespace Matrices
                     suma = 0;
                 }
             }
+            int rowLength1 = matriz1.GetLength(0);
 
-            int rowLength1 = matriz3.GetLength(0);
-            int colLength1 = matriz3.GetLength(1);
-
-            for (int i = 0; i < rowLength1; i++)
+            for (int i = 1; i <= rowLength1; i++)
             {
-                for (int j = 0; j < colLength1; j++)
+                dgvResultado.Columns.Add(Convert.ToString(i), Convert.ToString(i));
+            }
+
+            int rowLength3 = matriz3.GetLength(0);
+            int colLength3 = matriz3.GetLength(1);
+
+            for (int i = 0; i < rowLength3; i++)
+            {
+                dgvResultado.Rows.Insert(i);
+                for (int j = 0; j < colLength3; j++)
                 {
-                    rtbResultado.AppendText(matriz3[i, j] + " , ");
+                    //dgvM1.Rows.Insert(i, 1);
+                    //dgvM1.Rows.Add("h "," "," "," "," "," ");
+                    dgvResultado[j, i].Value = matriz3[i, j];
                 }
-                rtbResultado.AppendText("\n");
+                //rtbM1.AppendText("\n");
             }
         }
 
