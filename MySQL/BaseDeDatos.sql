@@ -11,6 +11,11 @@ CREATE TABLE habitaciones(
 select * from habitaciones;
 
 insert into habitaciones (nombre,descripcion,tarifa,status) values("H1","Simple",100,"Libre");
+insert into habitaciones (nombre,descripcion,tarifa,status) values("H2","Simple",100,"Libre");
+insert into habitaciones (nombre,descripcion,tarifa,status) values("H3","Simple",100,"Libre");
+insert into habitaciones (nombre,descripcion,tarifa,status) values("H4","Doble",150,"Libre");
+insert into habitaciones (nombre,descripcion,tarifa,status) values("H5","Doble",150,"Libre");
+insert into habitaciones (nombre,descripcion,tarifa,status) values("H6","Lujo",250,"Libre");
 
 update habitaciones set status="Ocupado" where clave=5;
 
@@ -19,12 +24,11 @@ delete from habitaciones where nombre='H1';
 CREATE TABLE reservaciones(
 	clave int PRIMARY KEY AUTO_INCREMENT,
 	habitacion varchar(20),
-	cliente varchar(100),
 	entrada date,
 	salida date
 );
 
-insert into reservaciones (habitacion,cliente,entrada,salida) values('H1','Jose','2019-10-20','2019-10-25');
+insert into reservaciones (habitacion,entrada,salida) values('H1','2019-10-20','2019-10-25');
 
 delete from reservaciones where nombre='H1';
 

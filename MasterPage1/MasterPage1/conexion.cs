@@ -6,13 +6,12 @@ using System.Threading.Tasks;
 
 using MySql.Data.MySqlClient;
 using System.Data;
-using System.Windows.Forms;
 
-namespace MySQL
+namespace MasterPage1
 {
     class conexion
     {
-        public DataTable dt = new DataTable();
+        
 
         //static string strPassword = "5266";
         //static string strPort = "3306";
@@ -20,7 +19,7 @@ namespace MySQL
         static string strPassword = "123456";
         static string strPort = "3306";
         
-        static string strDatabase = "hotel";
+        static string strDatabase = "carrito";
 
         public string strConexion = "Server=localhost;Port=" + strPort + "; Uid = root; Pwd=" + strPassword + "; Database=" + strDatabase + ";";
         public MySqlConnection conectar = new MySqlConnection();
@@ -31,12 +30,12 @@ namespace MySQL
             {
                 conectar.ConnectionString = strConexion;
                 conectar.Open();
-                Console.WriteLine("abierta");
+                System.Diagnostics.Debug.WriteLine("abierta");
                 return true;
             }
             catch
             {
-                Console.WriteLine("no abierta");
+                System.Diagnostics.Debug.WriteLine("no abierta");
                 return false;
             }
         }
@@ -46,32 +45,32 @@ namespace MySQL
             try
             {
                 conectar.Close();
-                Console.WriteLine("cerrada");
+                System.Diagnostics.Debug.WriteLine("cerrada");
                 return true;
             }
             catch
             {
-                Console.WriteLine("no cerrada");
+                System.Diagnostics.Debug.WriteLine("no cerrada");
                 return false;
             }
 
         }
 
-        public System.Data.DataTable cargarDatos(String query)
+        public DataTable cargarDatos(String query)
         {
-            dt = new System.Data.DataTable();
+            DataTable dt = new DataTable();
             try
             {
                 abrir();
                 MySqlDataAdapter comando = new MySqlDataAdapter(query, strConexion);
                 comando.Fill(dt);
-                Console.WriteLine("cargado");
+                System.Diagnostics.Debug.WriteLine("cargados "+dt.);
                 cerrar();
                 return dt;
             }
             catch
             {
-                Console.WriteLine("no cargado");
+                System.Diagnostics.Debug.WriteLine("no cargado");
                 return null;
             }
         }
@@ -84,12 +83,12 @@ namespace MySQL
                 MySqlCommand comando = new MySqlCommand(query, conectar);
                 comando.ExecuteNonQuery();
                 cerrar();
-                Console.WriteLine("query ejecutada");
+                System.Diagnostics.Debug.WriteLine("query ejecutada");
                 return true;
             }
             catch
             {
-                Console.WriteLine("query no ejecutada");
+                System.Diagnostics.Debug.WriteLine("query no ejecutada");
                 return false;
             }
         }
