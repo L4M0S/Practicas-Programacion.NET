@@ -22,3 +22,14 @@ D:\Desarrollo .NET\Matrices\Matrices\obj\Debug\Matrices.pdb
 D:\Desarrollo .NET\Matrices\Matrices\bin\Debug\Matrices.exe.config
 D:\Desarrollo .NET\Matrices\Matrices\bin\Debug\Matrices.exe
 D:\Desarrollo .NET\Matrices\Matrices\bin\Debug\Matrices.pdb
+E:\Desarrollo .NET\Matrices\Matrices\bin\Debug\Matrices.exe.config
+E:\Desarrollo .NET\Matrices\Matrices\bin\Debug\Matrices.exe
+E:\Desarrollo .NET\Matrices\Matrices\bin\Debug\Matrices.pdb
+E:\Desarrollo .NET\Matrices\Matrices\obj\Debug\Matrices.csprojAssemblyReference.cache
+E:\Desarrollo .NET\Matrices\Matrices\obj\Debug\Matrices.Form1.resources
+E:\Desarrollo .NET\Matrices\Matrices\obj\Debug\Matrices.Form2.resources
+E:\Desarrollo .NET\Matrices\Matrices\obj\Debug\Matrices.Form3.resources
+E:\Desarrollo .NET\Matrices\Matrices\obj\Debug\Matrices.Properties.Resources.resources
+E:\Desarrollo .NET\Matrices\Matrices\obj\Debug\Matrices.csproj.GenerateResource.cache
+E:\Desarrollo .NET\Matrices\Matrices\obj\Debug\Matrices.exe
+E:\Desarrollo .NET\Matrices\Matrices\obj\Debug\Matrices.pdb

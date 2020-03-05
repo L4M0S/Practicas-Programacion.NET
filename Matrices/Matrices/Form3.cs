@@ -39,10 +39,12 @@ namespace Matrices
         public void sumar()
         {
             matriz3 = new int[matriz1.GetLength(0),matriz1.GetLength(1)];
+            int filas = matriz3.GetLength(0);
+            int columnas = matriz3.GetLength(1);
 
-            for (int i = 0; i < 3; i++)
+            for (int i = 0; i < filas; i++)
             {
-                for (int j = 0; j < 3; j++)
+                for (int j = 0; j < columnas; j++)
                 {
                     matriz3[j, i] = matriz1[j, i] + matriz2[j, i];
                 }
@@ -75,9 +77,12 @@ namespace Matrices
         {
             matriz3 = new int[matriz1.GetLength(0), matriz1.GetLength(1)];
 
-            for (int i = 0; i < 3; i++)
+            int filas = matriz3.GetLength(0);
+            int columnas = matriz3.GetLength(1);
+
+            for (int i = 0; i < filas; i++)
             {
-                for (int j = 0; j < 3; j++)
+                for (int j = 0; j < columnas; j++)
                 {
                     matriz3[j, i] = matriz1[j, i] - matriz2[j, i];
                 }
